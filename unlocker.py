@@ -38,9 +38,9 @@ logging.basicConfig(
 
 cancelled = False
 
-# ПРОДУКТИВНІ дані
-REDMINE_API_URL = 'https://redmine.mindysupport.com/'
-REDMINE_API_KEY = '35ffa3eb3777e38bbb2613749be4b40338c6d5ea'
+# ПРОДУКТИВНІ дані (Ключ завантажується безпечно з середовища)
+REDMINE_API_URL = 'https://redmine.example.com/'
+REDMINE_API_KEY = os.environ.get('REDMINE_API_KEY', 'YOUR_API_KEY_HERE')
 
 
 def set_ui_message(text=None):
