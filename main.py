@@ -11,7 +11,7 @@ from tkinter import messagebox
 from redminelib import Redmine
 
 # Безпечно завантажуємо ключ із системи
-REDMINE_API_URL = 'https://test-redmine.mindysupport.com'
+REDMINE_API_URL = 'https://test-redmine.example.com'
 REDMINE_API_KEY = os.environ.get('REDMINE_API_KEY')
 
 if not REDMINE_API_KEY:
